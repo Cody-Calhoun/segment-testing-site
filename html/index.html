@@ -17,6 +17,13 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <!-- INSERT ANALYTICS.JS HERE -->
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eC1YykfwBLAyUmEsNGGpQSwccuToWRpG";;analytics.SNIPPET_VERSION="4.15.3";
+      analytics.load("eC1YykfwBLAyUmEsNGGpQSwccuToWRpG");
+      analytics.page();
+      }}();
+    </script>
     <title>Segment Testing Website</title>
   </head>
   <body>
@@ -32,7 +39,13 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Github Repo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="playground.html">Playground</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://segment.com/docs/" target="_blank">Segment Docs</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,10 +61,10 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <!-- <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+              </form> -->
             </div>
           </div>
       </nav>
